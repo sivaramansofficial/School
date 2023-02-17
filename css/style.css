@@ -1,0 +1,406 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: Montserrat;
+    background-color: #F2F2F2;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+header{
+    display: flex; 
+    height: 12vh;
+    width: 100vw;
+    background-color: #21409A; 
+    color: #fff;
+}
+header span{
+    font-size: 24px;
+    margin-top:30px
+}
+
+nav{
+    flex: 8;
+    margin-top:35px;
+}
+
+nav a{
+    padding-left:50px ;
+}
+
+#log{
+    flex:1;
+}
+
+header p{
+    margin-top: 30px;
+    margin-right:20px;
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ED4D09;
+}
+
+header p:hover{
+    color: #ED4D09;
+    background-color: #fff;
+}
+
+.img{
+    margin-top: 0px;
+    background-image: url(/img/1.jpg);
+    background-size: cover;
+    background-position: top;
+    margin-top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.img p{
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 43vw; 
+}
+.img a{
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #ED4D09;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.img a:hover{
+    background-color:#fff ;
+    color: #ED4D09;
+}
+/*
+.Education{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Education h1{
+    margin: 10px;
+    text-align: center;
+    color: #21409A;
+}
+.Education .early{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.Education .early .yes p{
+    color: #A81E3C;
+}
+.Education .early .yes{
+    flex: 1;
+    height: 50vw;
+    width:670px;
+    margin-left: 10px;
+}
+.Education .early .yes h2{
+    width: 50vw;
+}
+.Education .early .yes .brain{
+    width: 500px;
+}
+.Education .early .why{
+    flex: 1;
+    height: 50vw;
+    width: 600px;
+    padding-left: 20px;
+    
+    
+}*/
+
+
+.Education .early {
+    margin: 0;
+    margin-left: 10vw;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+   /* grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    grid-template-rows: 10vh 100vmin ;
+    grid-template-areas: 
+    "h h"
+    " ys wh";*/
+   
+}
+.Education h1{
+    grid-area: h;
+    margin-top: 30px;
+    text-align: center;
+}
+.Education .early .brain{
+    width: 500px;
+}
+.Education .early .why{
+    padding-left: 20px;
+    border-left: .5px solid #000;
+}
+
+
+.about{
+    margin-top: 50px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-template-rows: 1fr; 
+}
+
+.about .mission{
+    margin-left: 10vw;
+    margin: 20vh;
+    height: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.about .image{
+    margin: 20px;
+    
+}
+
+
+.program h1{
+    text-align: center;
+    margin:30px;
+    font-size: 42px;
+}
+
+.program .box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(281px,1fr));
+    margin-left: 20px;
+    gap: 20px;
+    text-align: center;
+
+}
+.program .box .play{
+    height: 428px;
+    width: 281px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+.program .box .nursery{
+    height: 428px;
+    width: 281px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.program .box .junior{
+    height: 428px;
+    width: 281px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.program .box .senior{
+    height: 428px;
+    width: 281px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.new{
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.new h1{
+    margin-top: 50px;
+    margin-left: 15vw;
+
+}
+.new h2{
+    text-align: center;
+    font-size: 32px;
+   
+}
+.new .app{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: #fff;
+    border-radius: 20px;
+    
+ } 
+.app .mob{
+    height: 80vh;
+ }
+
+.app .mob img{
+    margin-left: 10vw;
+    margin-top: 50px;
+ }
+
+.app .mob p{
+    width:10vw;
+    margin-left: 10vw;
+    margin-top: 50px;
+   
+}
+
+.app .chil{
+    height: 80vh;
+    background-color: #fff;
+}
+.app .chil p{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.app .chil img{
+    margin-left: 15px;
+}
+
+.infra{
+    margin-top: 50px;
+}
+.infra h1{
+    margin-left: 10vw;
+}
+
+.inf{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    margin-left: 10vw;
+    gap: 20px;
+    text-align: center;
+}
+
+.inf .transport{
+    width: 330px;
+    height: 299px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.inf .transport h2{
+    margin-top: 50px;
+}
+.inf .transport p{
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+.inf .Library{
+    width: 330px;
+    height: 299px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.inf .Library h2{
+    margin-top: 50px;
+}
+.inf .Library p{
+    margin-top: 70px;
+    margin-left: 40px;
+}
+
+
+.inf .Physical{
+    width: 330px;
+    height: 299px;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+
+}
+.inf .Physical h2{
+    margin-top: 50px;
+}
+.inf .Physical p{
+    margin-top: 70px;
+    margin-left: 40px;
+} 
+
+.quick{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    background-color: #21409A;
+    color: #fff;
+    height: 100vh;
+    margin-top: 50px;
+    
+
+}
+.quick .sr{
+    margin-left: 10vw;
+    margin-top: 15vh;
+    font-size: 18px;
+}
+
+.quick .sr a{
+    text-decoration-line: none;
+    color: #fff;
+}
+
+.quick .quic {
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+.quick .quic a{
+    display: flex;
+    flex-direction: column;
+    text-decoration-line: none;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+    
+}
+
+.quick .enquiry {
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+.quick .enquiry a{
+    display: flex;
+    flex-direction: column;
+    text-decoration-line: none;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+    
+}
+
+.quick .educ {
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+.quick .educ a{
+    display: flex;
+    flex-direction: column;
+    text-decoration-line: none;
+    color: #fff;
+    padding-top: 20px;
+    font-size: 18px;
+    
+}
+
+
+
+
